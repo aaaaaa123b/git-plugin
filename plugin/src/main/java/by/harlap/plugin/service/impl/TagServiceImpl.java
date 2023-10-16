@@ -104,11 +104,7 @@ public class TagServiceImpl implements TagService {
             final int exitCode = checkTagProcess.waitFor();
 
             return exitCode == 0;
-//            return exitCode == 0;
-//            boolean result = true;
-//            if (exitCode == 0) {
-//                result = false;
-//            }
+
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
